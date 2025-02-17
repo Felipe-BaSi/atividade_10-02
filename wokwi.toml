@@ -1,0 +1,7 @@
+[wokwi]
+version = 1
+firmware = 'build/atividade_10-02.uf2'
+elf = 'build/atividade_10-02.elf'
+
+[console]
+baudrate = 115200
