@@ -149,9 +149,16 @@ int main() {
         // Atualização da tela OLED
         ssd1306_fill(&ssd, false);
         if(joystick_press) {
+            
             ssd1306_rect(&ssd, 0, 0, 128, 64, true, false);
+            ssd1306_rect(&ssd, 1, 1, 126, 62, true, false);
+            ssd1306_rect(&ssd, 2, 2, 124, 60, true, false);
+            ssd1306_rect(&ssd, 3, 3, 122, 58, true, false);
+            
         } else {
+
             ssd1306_rect(&ssd, 0, 0, 128, 64, true, false);
+
         }
         draw_square(&ssd, square_x, square_y, square_size, true);
         ssd1306_send_data(&ssd);
